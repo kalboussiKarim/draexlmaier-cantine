@@ -22,7 +22,7 @@ export const UserProgressContextProvider = ({ children }) => {
     setUserProgress("");
   }
   const userProgressCtx = {
-    process: userProgress,
+    progress: userProgress,
     showCart,
     showCheckout,
     hideCart,

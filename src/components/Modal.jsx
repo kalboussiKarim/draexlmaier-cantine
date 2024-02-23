@@ -6,13 +6,19 @@ import { createPortal } from "react-dom";
 export default function Modal({ children, open, className = "" }) {
   const dialog = useRef();
   useEffect(() => {
+    const modal = dialog.current;
     if (open) {
-      dialog.current.showModal();
+      modal.showModal();
     }
+    return () => {
+      modal.close();
+    };
   }, [open]);
   const ctx = useContext(CartContext);
   return createPortal(
-    <dialog ref={dialog} className={`model ${className}`}></dialog>,
+    <dialog ref={dialog} className={`model ${className}`}>
+      {children}
+    </dialog>,
     document.getElementById("modal")
   );
 }
