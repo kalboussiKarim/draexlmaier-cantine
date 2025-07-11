@@ -6,7 +6,7 @@
 .orders-table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #111;
+
   margin-top: 1rem;
 }
 
@@ -14,11 +14,12 @@
 .orders-table td {
   border: 1px solid #ddd;
   padding: 1rem;
+  background-color: #1d1a16;
   text-align: left;
 }
 
 .orders-table th {
-  background-color: #222; /* Dark header */
+  background-color: #5d5d5d; /* Dark header */
   color: #fff; /* Light text */
 }
 
@@ -52,7 +53,7 @@
 
   .orders-table tr {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 0.5rem;
@@ -61,7 +62,7 @@
   .orders-table td {
     display: flex;
     justify-content: space-between;
-
+    background-color: #1d1a16;
     padding: 0.5rem 1rem 1rem 0.5rem;
   }
 
@@ -150,4 +151,13 @@
 .cancel-btn {
   background-color: #ddd;
   color: #333;
+}
+.phone-link {
+  color: #ffc404;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.phone-link:hover {
+  text-decoration: underline;
 }

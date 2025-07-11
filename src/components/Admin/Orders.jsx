@@ -135,7 +135,11 @@ export default function Orders() {
               return (
                 <tr key={order.$id}>
                   <td data-label="Client :">{order.name}</td>
-                  <td data-label="Téléphone :">{order.phone}</td>
+                  <td data-label="Téléphone :">
+                    <a href={`tel:${order.phone}`} className="phone-link">
+                      {order.phone}
+                    </a>
+                  </td>
                   <td data-label="Livraison :">
                     {order.delivery ? "Oui" : "Non"}
                   </td>
