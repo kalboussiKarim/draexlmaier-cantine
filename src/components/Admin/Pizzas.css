@@ -1,0 +1,139 @@
+.pizzas-container {
+  padding: 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.pizza-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  background: #fafafa;
+}
+.pizza-card-content {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.pizza-left {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pizza-right {
+  flex: 1;
+  min-width: 200px;
+}
+
+.pizza-card label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #444444;
+}
+
+.pizza-card input,
+.pizza-card textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.pizza-card button {
+  align-self: center;
+  padding: 0.5rem 1rem;
+  background-color: #956600;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.pizza-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.pizza-image {
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.delete-img-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.delete-img-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  .pizza-card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pizza-left {
+    flex: 0 0 220px; /* Give space for image and padding */
+  }
+
+  .pizza-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+  }
+
+  .pizza-right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .pizza-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .pizza-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pizza-right {
+    width: 100%;
+  }
+}

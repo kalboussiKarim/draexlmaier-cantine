@@ -16,7 +16,7 @@ export default function Modal({ children, open, className = "" }) {
   }, [open]);
   const ctx = useContext(CartContext);
   return createPortal(
-    <dialog ref={dialog} className={`model ${className}`}>
+    <dialog ref={dialog} className={`modal ${className}`}>
       {children}
     </dialog>,
     document.getElementById("modal")

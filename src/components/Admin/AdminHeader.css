@@ -1,0 +1,89 @@
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1a16;
+  color: #ffc404;
+  padding: 1rem 5%;
+  position: relative;
+}
+
+#main-header #title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#main-header #title img {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+}
+
+#main-header #title h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 0;
+  color: #ffc404;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Navigation menu */
+.admin-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Style both <Link> and logout <button> consistently */
+.admin-nav a,
+.admin-nav .nav-link {
+  color: #ffc404;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font: inherit;
+  padding: 0;
+  cursor: pointer;
+}
+
+.admin-nav a:hover,
+.admin-nav .nav-link:hover {
+  color: #ffab04;
+  text-decoration: underline;
+}
+
+/* Hamburger menu toggle (mobile) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffc404;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .admin-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    background-color: #1d1a16;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+
+  .admin-nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}

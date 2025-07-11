@@ -20,42 +20,40 @@ export default function Cart() {
     <Modal
       className="cart"
       open={userProgressCtx.progress === "cart"}
-      // onClose={handlecloseCart}
+      onClose={handlecloseCart}
     >
-      <h2>your card </h2>
+      <h2>Votre panier</h2>
       <ul>
-        {ctx.items.map((item) => {
-          return (
-            <CartItem
-              key={item.id}
-              name={item.name}
-              price={item.price}
-              quantity={item.quantity}
-              onPlus={() => {
-                ctx.addItem(item);
-              }}
-              onMinus={() => {
-                ctx.removeItem(item.id);
-              }}
-            ></CartItem>
-          );
-        })}
+        {ctx.items.length === 0 ? (
+          <p className="center">Votre panier est vide.</p>
+        ) : (
+          <ul>
+            {ctx.items.map((item) => (
+              <CartItem
+                key={item.$id}
+                name={item.name}
+                price={item.price}
+                quantity={item.quantity}
+                onPlus={() => ctx.addItem(item)}
+                onMinus={() => ctx.removeItem(item.$id)}
+              />
+            ))}
+          </ul>
+        )}
       </ul>
-      <p className="cart-total">{cartTotal} $</p>
-      <p className="modal-actions">
+      {ctx.items.length > 0 && (
+        <p className="cart-total">Total : {cartTotal.toFixed(2)} TND</p>
+      )}
+      <div className="modal-actions">
         <Button textOnly onClick={handlecloseCart}>
-          close
+          fermer
         </Button>
         {ctx.items.length > 0 && (
-          <Button
-            onClick={() => {
-              userProgressCtx.showCheckout();
-            }}
-          >
-            go To checkout
+          <Button onClick={() => userProgressCtx.showCheckout()}>
+            Continuer
           </Button>
         )}
-      </p>
+      </div>
     </Modal>
   );
 }

@@ -1,0 +1,153 @@
+.orders-container {
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  margin-top: 1rem;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.orders-table th {
+  background-color: #222; /* Dark header */
+  color: #fff; /* Light text */
+}
+
+.pagination {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pagination button {
+  padding: 0.5rem 0.75rem;
+  border: none;
+  background-color: #ffc404;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button.active,
+.pagination button:hover {
+  background-color: #ffab04;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .orders-table thead {
+    display: none;
+  }
+
+  .orders-table tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  .orders-table td {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.5rem 1rem 1rem 0.5rem;
+  }
+
+  .orders-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+}
+.orders-table select {
+  padding: 0.4rem;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff5da;
+  color: #333;
+}
+
+.orders-table select:focus {
+  outline: none;
+  border-color: #ffc404;
+}
+.order-items-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.order-items-list li {
+  margin: 0.2rem 0;
+}
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  color: red;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+.confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirm-box {
+  background: #000000;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.confirm-btn,
+.cancel-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.confirm-btn {
+  background-color: red;
+  color: white;
+}
+
+.cancel-btn {
+  background-color: #ddd;
+  color: #333;
+}
