@@ -2,16 +2,15 @@ import React from "react";
 
 export default function Button({
   children,
-  textOnly,
-  className,
-  type,
-  onClick,
+  type = "button",
+  textOnly = false,
+  className = "",
   ...props
 }) {
-  let cssClasses = textOnly ? "text-button" : "button";
-  cssClasses += " " + className;
+  let baseClass = textOnly ? "button text-only" : "button";
+
   return (
-    <button className={cssClasses} {...props} onClick={onClick}>
+    <button type={type} className={`${baseClass} ${className}`} {...props}>
       {children}
     </button>
   );

@@ -134,6 +134,25 @@ export default function Checkout() {
             <label htmlFor="notes" style={{ fontWeight: "bold" }}>
               Notes supplémentaires :
             </label>
+            <p
+              style={{
+                fontSize: "0.85rem",
+                color: "#46443c",
+                marginTop: "-0.3rem",
+              }}
+            >
+              * Toutes les pizzas avec olives et persillade !
+            </p>
+            <p
+              style={{
+                fontSize: "0.85rem",
+                color: "#46443c",
+                marginTop: "-1rem",
+                marginBottom: "-0.3rem",
+              }}
+            >
+              * Suppléments: Viande hachée, Thon et Fromage à 4 TND.
+            </p>
             <textarea
               id="notes"
               name="notes"
@@ -151,10 +170,15 @@ export default function Checkout() {
           </div>
         </div>
         <p className="modal-actions">
-          <Button type="button" textOnly={true} onClick={handleCloseCheckout}>
+          <Button
+            type="button"
+            textOnly={true}
+            className="close-button"
+            onClick={handleCloseCheckout}
+          >
             fermer
           </Button>
-          <Button>Confirmer la commande</Button>
+          <Button type="submit">Confirmer la commande</Button>
         </p>
       </form>
     </Modal>

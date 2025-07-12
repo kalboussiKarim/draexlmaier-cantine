@@ -45,7 +45,12 @@ export default function Cart() {
         <p className="cart-total">Total : {cartTotal.toFixed(2)} TND</p>
       )}
       <div className="modal-actions">
-        <Button textOnly onClick={handlecloseCart}>
+        <Button
+          type="button"
+          textOnly={true}
+          className="close-button"
+          onClick={handlecloseCart}
+        >
           fermer
         </Button>
         {ctx.items.length > 0 && (

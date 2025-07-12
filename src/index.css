@@ -231,6 +231,8 @@ body {
 
 /* MODAL */
 .modal {
+  position: fixed; /* This is key */
+  transform: translate(-50%, -50%);
   background-color: #e4ddd4;
   border-radius: 12px;
   border: none;
@@ -238,11 +240,10 @@ body {
   padding: 2rem 3rem;
   width: 90%;
   max-width: 40rem;
-  animation: fade-slide-up 0.3s ease-out forwards;
-  margin: auto;
-  position: relative;
+  animation: fade-slide-up 0.4s ease-out forwards;
   overflow: auto;
   max-height: 90vh;
+  z-index: 1000; /* Make sure it’s above other content */
 }
 
 .modal::backdrop {
@@ -597,4 +598,15 @@ button:disabled:hover {
   to {
     transform: rotate(360deg);
   }
+}
+.close-button {
+  color: #000000;
+  background: none;
+  border: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.close-button:hover {
+  background: none;
 }
