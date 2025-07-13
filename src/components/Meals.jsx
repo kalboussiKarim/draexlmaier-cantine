@@ -40,7 +40,7 @@ export default function Meals() {
           <p>Pizzas au feu de bois authentique</p>
           <p>
             Découvrez nos pizzas artisanales cuites au four à bois traditionnel
-            avec des ingrédients frais et de qualité, au cœur de Msaken
+            avec des ingrédients frais et de qualité, au cœur de Msaken.
           </p>
           <a href="#meals-title">
             <button className="button">Découvrir nos pizzas</button>
