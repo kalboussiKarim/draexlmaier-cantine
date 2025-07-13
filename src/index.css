@@ -578,7 +578,7 @@ button:disabled:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60vh; /* Adjust to vertically center in viewport */
+  height: 90vh; /* Adjust to vertically center in viewport */
   font-size: 1.2rem;
   color: #161616;
 }
