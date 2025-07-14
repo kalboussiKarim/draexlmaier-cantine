@@ -90,7 +90,9 @@ export default function Meals() {
         <div className="contact-content">
           <div className="contact-item">
             <h3>📞 Téléphone</h3>
-            <p>+216 55 123 456</p>
+            <a className="phone-number2" href="tel:+21656422544">
+              +216 56 422 544
+            </a>
           </div>
           <div className="contact-item">
             <h3>📍 Adresse</h3>

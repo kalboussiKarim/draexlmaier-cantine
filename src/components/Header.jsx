@@ -21,7 +21,9 @@ export default function Header() {
         <img src={logo} alt="A Restaurant " />
         <div>
           <h1>Pajoo</h1>
-          <p className="phone-number">+216 55 123 456</p>
+          <a className="phone-number" href="tel:+21656422544">
+            +216 56 422 544
+          </a>
         </div>
       </div>
       <nav>
