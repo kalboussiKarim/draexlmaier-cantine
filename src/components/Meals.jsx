@@ -120,6 +120,7 @@ export default function Meals() {
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
+            title="Carte de localisation de Pajoo Pizzeria"
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
