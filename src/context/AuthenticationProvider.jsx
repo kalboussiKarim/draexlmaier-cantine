@@ -17,8 +17,9 @@ function AuthenticationProvider({ children }) {
       setUser(session);
       //console.log("Session found!");
     } catch (error) {
-      setUser(null);
-      //console.log("No current session!");
+      if (error.code !== 401) {
+        console.error("Error checking session:", error);
+      }
     } finally {
       setLoading(false);
     }
