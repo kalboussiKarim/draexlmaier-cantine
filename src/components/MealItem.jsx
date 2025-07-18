@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import Button from "./Button";
 import { CartContext } from "../store/cartContext";
-import pizza from "../assets/images/margherita-pizza.jpg"; // Adjust the path if needed
+import pizza from "../assets/images/margherita-pizza.webp"; // Adjust the path if needed
 import st from "../../appWrite/storage";
 
 export default function MealItem({ meal }) {

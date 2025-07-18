@@ -1,6 +1,5 @@
 import React, { useContext, useEffect, useRef } from "react";
-import logo from "../assets/logo.jpg";
-import Button from "./Button";
+
 import { CartContext } from "../store/cartContext";
 import { createPortal } from "react-dom";
 export default function Modal({ children, open, className = "" }) {
