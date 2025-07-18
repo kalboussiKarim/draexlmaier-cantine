@@ -2,7 +2,7 @@ import db from "../../appWrite/databases";
 import { Query } from "appwrite";
 
 async function fetchHttp() {
-  const response = await db.pizzas.list();
+  const response = await db.pizzas.list([Query.equal("visible", [true])]);
   const restDate = await response.documents;
 
   if (!restDate) {
