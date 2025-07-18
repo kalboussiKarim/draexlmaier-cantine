@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pajoo.vercel.app/sitemap.xml
