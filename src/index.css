@@ -3,7 +3,9 @@
 * {
   box-sizing: border-box;
 }
-
+html {
+  background-color: #1d1a16; /* or any color matching your theme */
+}
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
