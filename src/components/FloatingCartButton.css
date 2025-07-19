@@ -1,3 +1,6 @@
+html {
+  background-color: #1d1a16; /* or any color matching your theme */
+}
 .floating-cart-button {
   position: fixed;
   bottom: 20px;
