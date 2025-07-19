@@ -17,6 +17,7 @@ html {
   cursor: pointer;
   z-index: 1000;
   transition: transform 0.2s ease;
+  overflow: hidden;
 }
 
 .floating-cart-button:hover {
