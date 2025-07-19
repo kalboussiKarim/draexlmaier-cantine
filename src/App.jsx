@@ -19,6 +19,7 @@ import Orders from "./components/Admin/Orders";
 import Pizzas from "./components/Admin/Pizzas";
 import AdminLogin from "./components/Admin/AdminLogin";
 import AdminLayout from "./components/Admin/AdminLayout";
+import FloatingCartButton from "./components/FloatingCartButton";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
                     <Checkout />
                     <OrderSuccessModal />
                     <OrderErrorModal />
+                    <FloatingCartButton />
                   </>
                 }
               />
