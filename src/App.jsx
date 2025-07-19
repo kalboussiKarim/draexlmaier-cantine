@@ -38,7 +38,6 @@ function App() {
                     <Checkout />
                     <OrderSuccessModal />
                     <OrderErrorModal />
-                    <FloatingCartButton />
                   </>
                 }
               />
