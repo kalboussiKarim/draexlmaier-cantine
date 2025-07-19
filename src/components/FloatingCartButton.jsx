@@ -22,7 +22,10 @@ export default function FloatingCartButton() {
 
   return (
     <div className="floating-cart-button" onClick={handleClick}>
-      <FaShoppingCart color="#d68b00" size={26} />
+      <FaShoppingCart
+        style={{ color: "#d68b00", background: "none" }}
+        size={26}
+      />
       <span className="cart-count">{totalQuantity}</span>
     </div>
   );
