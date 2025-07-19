@@ -19,10 +19,6 @@ html {
   transition: transform 0.2s ease;
   overflow: hidden;
 }
-.floating-cart-button svg {
-  background-color: transparent !important;
-  background: none !important;
-}
 
 .floating-cart-button:hover {
   transform: scale(1.1);
