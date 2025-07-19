@@ -13,7 +13,6 @@ export default function FloatingCartButton() {
     0
   );
 
-  // ✅ Only show the bubble if there are items
   if (totalQuantity === 0) return null;
 
   const handleClick = () => {
@@ -23,7 +22,7 @@ export default function FloatingCartButton() {
   return (
     <div className="floating-cart-button" onClick={handleClick}>
       <FaShoppingCart
-        style={{ color: "#d68b00", background: "none" }}
+        style={{ color: "#d68b00", backgroundColor: "transparent" }}
         size={26}
       />
       <span className="cart-count">{totalQuantity}</span>
