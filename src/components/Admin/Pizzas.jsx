@@ -96,7 +96,7 @@ export default function Pizzas() {
 
   return (
     <div className="pizzas-container">
-      <h2>🍕 Gestion des Pizzas</h2>
+      <h2>🍕 Gestion des Plats</h2>
       <button
         className="button"
         style={{ marginBottom: "1rem" }}
@@ -111,7 +111,7 @@ export default function Pizzas() {
           })
         }
       >
-        ➕ Créer une nouvelle pizza
+        ➕ Créer un nouveau plat
       </button>
       {newPizza && (
         <div className="pizza-card" style={{ backgroundColor: "#00356aff" }}>
@@ -175,7 +175,7 @@ export default function Pizzas() {
                 marginTop: "0.5rem",
               }}
             >
-              <label style={{ fontSize: "0.95rem" }}>Pizza visible ?</label>
+              <label style={{ fontSize: "0.95rem" }}>Plat visible ?</label>
               <input
                 type="checkbox"
                 checked={newPizza.visible}

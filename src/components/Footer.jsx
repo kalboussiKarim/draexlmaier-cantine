@@ -2,7 +2,8 @@ export default function Footer() {
   return (
     <footer className="main-footer" style={{ marginTop: "2rem" }}>
       <p>
-        &copy; {new Date().getFullYear()} Pizzeria Pajoo — Tous droits réservés
+        &copy; {new Date().getFullYear()} Draexlmaier Cantine — Tous droits
+        réservés
       </p>
       <p className="made-by">
         <a

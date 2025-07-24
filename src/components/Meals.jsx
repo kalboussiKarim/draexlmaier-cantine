@@ -36,18 +36,20 @@ export default function Meals() {
     <>
       <section className="hero">
         <div className="hero-overlay">
-          <h1>Pizzeria Pajoo</h1>
-          <p>Pizzas au feu de bois authentique</p>
+          <h1>Draexlmaier Cantine</h1>
+          <p>Menu varié et plats savoureux</p>
           <p>
-            Découvrez nos pizzas artisanales cuites au four à bois traditionnel
-            avec des ingrédients frais et de qualité, au cœur de Msaken.
+            Découvrez notre sélection de plats faits maison, préparés avec des
+            ingrédients frais et de qualité. De l’entrée au dessert, chaque
+            recette est pensée pour éveiller vos papilles, dans une ambiance
+            conviviale au cœur de Draexlmaier.
           </p>
           <a href="#meals-title">
-            <button className="button">Découvrir nos pizzas</button>
+            <button className="button">Découvrir notre menu</button>
           </a>
         </div>
       </section>
-      <h2 id="meals-title">Nos Spécialités</h2>
+      <h2 id="meals-title">Menu du jour</h2>
       <ul id="meals">
         {fetchedData.map((meal) => (
           <li key={meal.$id}>
@@ -55,7 +57,7 @@ export default function Meals() {
           </li>
         ))}
       </ul>
-      {/* Wood Fired Section */}
+      {/* Wood Fired Section
       <section className="woodfire-section">
         <div className="woodfire-content">
           <div className="woodfire-image">
@@ -84,7 +86,7 @@ export default function Meals() {
           </div>
         </div>
       </section>
-      {/* Contact Section */}
+      {/* Contact Section }
       <section className="contact-section">
         <h2>Contactez-nous</h2>
         <div className="contact-content">
@@ -108,7 +110,7 @@ export default function Meals() {
           </div>
         </div>
       </section>
-      {/* Google Mapppppppppps */}
+      {/* Google Mapppppppppps }
       <section className="map-section">
         <h2>Où nous trouver</h2>
 
@@ -125,6 +127,7 @@ export default function Meals() {
           />
         </div>
       </section>
+       */}
       <Footer />
     </>
   );

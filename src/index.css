@@ -62,8 +62,7 @@ body {
 
 .hero {
   position: relative;
-  background: url("./assets/woodFiredPizza.jpeg") center center / cover
-    no-repeat;
+  background: url("./assets/images/bg.webp") center center / cover no-repeat;
   min-height: 65vh;
   display: flex;
   align-items: center;
@@ -74,7 +73,7 @@ body {
 }
 
 .hero-overlay {
-  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  background: rgba(0, 0, 0, 0.5); /* dark overlay */
   padding: 2rem;
   border-radius: 1rem;
   max-width: 800px;

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import logo from "../assets/pizza.png";
+import logo from "../assets/plate.png";
 import Button from "./Button";
 import { CartContext } from "../store/cartContext";
 import { UserProgressContext } from "../store/UserProgressContext";
@@ -20,10 +20,10 @@ export default function Header() {
       <div id="title">
         <img src={logo} alt="A Restaurant " />
         <div>
-          <h1>Pajoo</h1>
-          <a className="phone-number" href="tel:+21656422544">
+          <h1>DRÄXLMAIER</h1>
+          {/*<a className="phone-number" href="tel:+21656422544">
             +216 56 422 544
-          </a>
+          </a>*/}
         </div>
       </div>
       <nav>

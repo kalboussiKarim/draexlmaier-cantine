@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Button from "./Button";
 import { CartContext } from "../store/cartContext";
 import pizza from "../assets/images/margherita-pizza.webp"; // Adjust the path if needed
+import plat from "../assets/images/plat.webp"; // Adjust the path if needed
 import st from "../../appWrite/storage";
 
 export default function MealItem({ meal }) {
@@ -26,7 +27,7 @@ export default function MealItem({ meal }) {
     <div className="meal-item">
       <article>
         <img
-          src={meal.imageURL ? st.images.getFileView(meal.imageURL) : pizza}
+          src={meal.imageURL ? st.images.getFileView(meal.imageURL) : plat}
           alt={meal.name}
           className="meal-item-image"
         />

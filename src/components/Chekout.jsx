@@ -77,53 +77,6 @@ export default function Checkout() {
             margin: "1rem 0",
           }}
         >
-          <span>Livraison :</span>
-
-          {/* Radios inline */}
-          <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-            <label
-              style={{ display: "flex", alignItems: "center", gap: "4px" }}
-            >
-              <input
-                type="radio"
-                name="delivery"
-                value="oui"
-                checked={isChecked === true}
-                onChange={() => setIsChecked(true)}
-              />
-              Oui
-            </label>
-
-            <label
-              style={{ display: "flex", alignItems: "center", gap: "4px" }}
-            >
-              <input
-                type="radio"
-                name="delivery"
-                value="non"
-                checked={isChecked === false}
-                onChange={() => setIsChecked(false)}
-              />
-              Non
-            </label>
-          </div>
-
-          <p
-            style={{
-              fontSize: "0.85rem",
-              color: "#46443c",
-              marginTop: "-0.5rem",
-            }}
-          >
-            * La livraison coûte 3 TND de plus (Msaken seulement).
-          </p>
-
-          {isChecked && (
-            <div style={{ marginTop: "-1rem" }}>
-              <Input label={"Adresse"} type="text" id={"adresse"} required />
-            </div>
-          )}
-
           <div
             style={{
               display: "flex",
@@ -134,7 +87,7 @@ export default function Checkout() {
             <label htmlFor="notes" style={{ fontWeight: "bold" }}>
               Notes supplémentaires :
             </label>
-            <p
+            {/*<p
               style={{
                 fontSize: "0.85rem",
                 color: "#46443c",
@@ -152,7 +105,7 @@ export default function Checkout() {
               }}
             >
               * Suppléments: Viande hachée, Thon et Fromage à 4 TND.
-            </p>
+            </p>*/}
             <textarea
               id="notes"
               name="notes"
