@@ -36,7 +36,7 @@ export default function Meals() {
     <>
       <section className="hero">
         <div className="hero-overlay">
-          <h1>Draexlmaier Cantine</h1>
+          <h1>Dräexlmaier Cantine</h1>
           <p>Menu varié et plats savoureux</p>
           <p>
             Découvrez notre sélection de plats faits maison, préparés avec des
